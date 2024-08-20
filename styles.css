@@ -1,0 +1,64 @@
+/* 設置整體的字體 */
+body {
+  font-family: 微軟正黑體, Arial, sans-serif;
+}
+
+.product-description {
+  border-left: 4px solid #000; /* 左側垂直線 */
+  padding-left: 15px; /* 線和文字之間的距離 */
+}
+/* 縮略圖的固定尺寸 */
+.img-thumbnail {
+  width: 75px; /* 設定縮略圖的寬度 */
+  height: 75px; /* 設定縮略圖的高度 */
+  object-fit: cover; /* 保持圖片比例，裁剪圖片以適應容器 */
+}
+
+/* 回到頂部按鈕的樣式 */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  display: none; /* 預設隱藏按鈕 */
+  cursor: pointer;/*滑鼠懸停在元素上時的形状。 pointer 表示手指形狀*/
+  z-index: 1000; /* 確保按鈕位於頂層 */
+}
+
+/* 在較大螢幕尺寸顯示回到頂部按鈕 */
+@media (min-width: 992px) {
+  .back-to-top {
+      display: block;
+  }
+}
+/* 調整footer的背景顏色和內邊距 */
+footer {
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+/* 自訂漢堡選單按鈕樣式 */
+.navbar-toggler {
+  border: none;
+}
+/* 類別選單的字體顏色 */
+.text-brown {
+  color: #8B4513; /* 咖啡色 */
+}
+/* 點擊時移除漢堡按鈕的邊框 */
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* 產品介紹區域樣式 */
+.product-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+/*.product-info  {
+   /* 調整這個值來垂直對齊 */
+
+
+
